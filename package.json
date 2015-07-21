@@ -1,0 +1,32 @@
+{
+  "name": "chess",
+  "version": "0.0.1",
+  "description": "",
+  "main": "README.md",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-mocks": "^1.4.3",
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.2",
+    "karma-chai": "^0.1.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "phantomjs": "^1.9.17"
+  },
+  "devDependencies": {
+    "karma": "^0.13.2",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
