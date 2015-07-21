@@ -26,7 +26,8 @@
       describe('with invalid move', function() {
         beforeEach(function() {
           var isValidMove = function() { return false; };
-          piece = new GridPiece(board, isValidMove);
+          piece = new GridPiece(board);
+          piece.isValidMove = isValidMove;
           piece.move(newX, newY);
         });
 
@@ -39,7 +40,8 @@
       describe('with valid move', function() {
         beforeEach(function() {
           var isValidMove = function() { return true; };
-          piece = new GridPiece(board, isValidMove);
+          piece = new GridPiece(board);
+          piece.isValidMove = isValidMove;
           piece.move(newX, newY);
         });
 

@@ -5,12 +5,10 @@ var PieceColor = {
   WHITE: 1
 };
 
-function GridPiece(board, isValidMove) {
+function GridPiece(board) {
   this.xCoordinate = 0;
   this.yCoordinate = 0;
   this.board = board;
-
-  this.isValidMove = isValidMove;
 }
 
 GridPiece.prototype.move = function(newX, newY) {

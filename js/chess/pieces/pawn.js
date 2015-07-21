@@ -11,6 +11,6 @@ function Pawn(color, board) {
   };
 
   var base = new ChessPiece(color, board, isValidMove);
-
+  base.isValidMove = isValidMove;
   return base;
 }
