@@ -36,6 +36,13 @@
         pawn.board.isLegalBoardPosition = function(x,y) {return false;};
         expect(pawn.isValidMove(0, 6)).toBeFalsy();
       });
+
+      describe('black piece', function() {
+        it('should return false for backwards move', function() {
+          pawn.color = PieceColor.BLACK;
+          expect(pawn.isValidMove(0, 6)).toBeFalsy();
+        });
+      });
     });
   });
 })();
